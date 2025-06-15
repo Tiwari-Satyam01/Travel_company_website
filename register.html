@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Travels | Book Now</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">Canvas Travels</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="register.html" class="active">Book Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="registration-form">
+        <div class="container">
+            <h2>Book Your Dream Vacation</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="travelers">Number of Travelers</label>
+                    <input type="number" id="travelers" name="travelers" min="1" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>Travel Group Type</label>
+                    <div class="radio-group">
+                        <input type="radio" id="family" name="group-type" value="family" checked>
+                        <label for="family">Family</label>
+                        
+                        <input type="radio" id="couple" name="group-type" value="couple">
+                        <label for="couple">Couple</label>
+                        
+                        <input type="radio" id="friends" name="group-type" value="friends">
+                        <label for="friends">Friends</label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="destination">Preferred Destination</label>
+                    <select id="destination" name="destination" required>
+                        <option value="">Select a destination</option>
+                        <option value="italy">Italy</option>
+                        <option value="japan">Japan</option>
+                        <option value="maldives">Maldives</option>
+                        <option value="bali">Bali</option>
+                        <option value="switzerland">Switzerland</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="dates">Preferred Travel Dates</label>
+                    <input type="date" id="dates" name="dates" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="special-requests">Special Requests</label>
+                    <textarea id="special-requests" name="special-requests" rows="4"></textarea>
+                </div>
+                
+                <button type="submit" class="btn">Submit Booking Request</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Canvas Travels. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
